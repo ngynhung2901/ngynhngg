@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Cá vui nhộn</title>
+    <style>
+      body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB;
+        }
+        .fish-tank {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            background-image: url(https://media.istockphoto.com/id/1152237432/vi/anh/c%E1%BA%A3nh-d%C6%B0%E1%BB%9Bi-n%C6%B0%E1%BB%9Bc-%C4%91%C3%A1y-bi%E1%BB%83n-nhi%E1%BB%87t-%C4%91%E1%BB%9Bi-v%E1%BB%9Bi-r%E1%BA%A1n-san-h%C3%B4-v%C3%A0-%C3%A1nh-n%E1%BA%AFng-m%E1%BA%B7t-tr%E1%BB%9Di.jpg?s=2048x2048&w=is&k=20&c=l-PDMUGKzgeD1TpVwor8O0KCdVP8pX81QZ6IuKwbJrw=);
+            background-size: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .jellyfish {
+            position: absolute;
+            width: 100px;
+            height: auto;
+            animation: float 6s infinite ease-in-out;
+        }
+        .jellyfish2 {
+            position: absolute;
+            width: 100px;
+            height: auto;
+            animation: float 4s infinite ease-in-out;
+            
+        }
+        .fish {
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            animation: swim 4s linear infinite;
+        }
+        .fish1 {
+            animation: swim1 7s linear infinite;
+        }
+        .fish2 {
+            animation: swim2 8s reverse infinite;
+        }
+        .fish3 {
+            animation: swim3 8s linear infinite;
+        }
+        .fish4 {
+            animation: swim4 10s alternate-reverse infinite;
+        }
+        .fish5 
+        {
+            animation: swim2 11s reverse infinite;
+        }
+        .shark 
+        {
+            width: auto;
+            height: auto;
+            position: absolute;
+            animation: swim-circle 6s linear infinite;
+        }
+        .moss {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            bottom: 0;
+        }
+        .crab {
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            bottom: 0;
+            animation: crawl 6s linear infinite;
+        }
+        .crab1 {
+            animation: crawl1 6s linear infinite;
+        }
+        .crab2 {
+            animation: crawl2 7s alternate-reverse infinite;
+        }
+        @keyframes swim1 {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(100vw); }
+        }
+        @keyframes swim2 {
+            0% { transform: translateX(0) ; }
+            100% { transform: translateX(100vw) ; }
+        }
+        @keyframes swim3 {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(100vw); }
+        }
+        @keyframes swim4 {
+            0% { transform: translateX(0) scaleX(-1) ; }
+            100% { transform: translateX(100vw) scaleX(1) ; }
+        }
+        @keyframes swim5 {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(100vw); }    
+        }
+        @keyframes swim-circle {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(120px, 0) rotate(80deg); }
+            50% { transform: translate(80px, 100px) rotate(180deg); }
+            75% { transform: translate(0, 100px) rotate(370deg); }
+            100% { transform: translate(0, 0) rotate(460deg); }
+        }
+        @keyframes crawl1 {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(100vw); }
+        }
+        @keyframes crawl2 {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(100vw); }
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fish-tank">
+        <!-- Cá bơi theo đàn -->
+        <img src="anh xoa phong/download__2_-removebg-preview.png" class="fish fish1" style="top: 20%; left: 0;">
+        <img src="anh xoa phong/download__2_-removebg-preview (1).png" class="fish fish2" style="top: 40%; left: 0;">
+        <img src="anh xoa phong/download-removebg-preview.png" class="fish fish3" style="top: 60%; left: 0;">
+        <img src="anh xoa phong/download__5_-removebg-preview.png" class="fish fish4" style="top: 60%; left: 0;">
+        <img src="anh xoa phong/images__1_-removebg-preview.png" class="fish fish5" style="top: 30%; left: 0;">
+        
+        <!-- Cá mập bơi theo hình tròn -->
+        <img src="anh xoa phong/download__3_-removebg-preview.png" class="shark" style="top: 20%; left: 10%;">
+        
+        <!-- Rêu ở dưới đáy hồ -->
+        <img src="anh xoa phong/download__9_-removebg-preview.png" class="moss" style="left: 10%;">
+        <img src="anh xoa phong/download__9_-removebg-preview.png" class="moss" style="left: 40%;">
+        <img src="anh xoa phong/download__9_-removebg-preview.png" class="moss" style="left: 70%;">
+        <img src="anh xoa phong/download__9_-removebg-preview.png" class="moss" style="left: 50%;">
+        <img src="anh xoa phong/download__9_-removebg-preview.png" class="moss" style="left: 30%;">
+        <img src="anh xoa phong/download__9_-removebg-preview.png" class="moss" style="left: 80%;">
+        <img src="anh xoa phong/download__9_-removebg-preview.png" class="moss" style="left: 20%;">
+        <img src="anh xoa phong/download__9_-removebg-preview.png" class="moss" style="left: 60%;">
+        
+        <!-- Cua bò dưới đáy hồ -->
+        <img src="anh xoa phong/cua-removebg-preview.png" class="crab crab1" style="top: 90%;">
+        <img src="anh xoa phong/cua-removebg-preview.png" class="crab crab2" style="top: 90%; left: 0%;">
+        <!-- sứa -->
+        <img src="anh xoa phong/sua-removebg-preview.png" alt="Jellyfish" class="jellyfish" style="top: 40%; left: 30%">
+        <img src="anh xoa phong/sua-removebg-preview.png" alt="Jellyfish" class="jellyfish" style="top: 50%; left: 70%">
+    </div>
+</body>
+</html>
